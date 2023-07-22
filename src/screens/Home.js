@@ -43,7 +43,7 @@ const Home = ({width}) => {
         width={230}
         style={{
           overflowX: 'hidden',
-          overflowY: 'scroll',
+          
           height: '100vh',
           position: 'fixed',
           left: 0,

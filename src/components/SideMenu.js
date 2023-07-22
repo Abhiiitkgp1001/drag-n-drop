@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import styled from 'styled-components'
 import { addContainerColor, borderColor, descriptionColor, dotColor, menuItemHoverColor, navyColor, sidebarCollapseWidth, todoBackgroundColor } from '../config';
 import { menuList, projectList } from '../DummyData';
-
+import '../App.css'
 
 const Container = styled.div`
 display: flex;
@@ -175,7 +175,7 @@ border-radius: 6px;
 }
 `;
   return (
-    <Container>
+    <Container className='noscroll'>
         <LogoContainer>
             <NameContainer>
                 <img src='images/logo.png' alt='logo' style={{ height:'24px', width:'24px' }}/>

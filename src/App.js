@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import MobileApp from './screens/MobileApp';
 import Home from './screens/Home';
-
+import './App.css'
 
 
 const App = () => {
