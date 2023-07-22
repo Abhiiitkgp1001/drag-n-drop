@@ -13,7 +13,11 @@ height: auto;
 border: 0.5px solid ${borderColor};
 background-color: white;
 `;
-
+const CustomDrawer = styled(Drawer)`
+.ant-drawer-body::-webkit-scrollbar {
+  width: 0 !important;
+}
+`;
 const Home = ({width}) => {
   const Container = styled.div`
   background-color: white; 
@@ -30,13 +34,14 @@ const Home = ({width}) => {
     <Layout hasSider>
       
       {width<sidebarCollapseWidth ? 
-      <Drawer closable={false} width={260}
+      <CustomDrawer  closable={false} width={260}
       bodyStyle={{ padding:'0px'}}
       placement="left" onClose={()=>setOpen(false)} open={open}>
         <SideMenu open={open} setOpen={()=>setOpen(!open)} width={width} collapse={collapse} setCollapse={()=>setCollapse(!collapse)}/>
-      </Drawer>
+      </CustomDrawer>
       :<Sider
         collapsible
+        className='noscroll'
         collapsed={collapse}
         breakpoint="lg"
         collapsedWidth={0}

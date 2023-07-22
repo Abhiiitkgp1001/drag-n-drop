@@ -7,6 +7,7 @@ import '../App.css'
 const Container = styled.div`
 display: flex;
 flex-direction: column;
+overflow-x: hidden;
 `;
 const LogoContainer = styled.div`
 display: flex;
