@@ -42,7 +42,8 @@ const Home = ({width}) => {
         collapsedWidth={0}
         width={230}
         style={{
-          overflow: 'auto',
+          overflowX: 'hidden',
+          overflowY: 'scroll',
           height: '100vh',
           position: 'fixed',
           left: 0,
