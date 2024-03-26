@@ -1,4 +1,4 @@
-# NestedGrid Drag App
+# Drag App
 
 This is responsive draggable application which shows how the drag-n-drop works. 
 Link: https://dragapp.netlify.app/
